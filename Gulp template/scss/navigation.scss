@@ -1,0 +1,64 @@
+nav {
+  margin: 0 auto;
+  width: 1400px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: static;
+  justify-content: flex-end;
+  line-height: 50px;
+  background: black;
+  font-family: calibri;
+}
+
+nav img {
+  height: 50%;
+
+
+}
+
+nav a {
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  transition: 0.3s;
+  margin-left: 50px;
+}
+
+nav a:hover:not(:last-of-type){
+  color: black;
+}
+
+#burger {
+  display: none;
+  font-size: 1.7em;
+  transition: transform 0.3s;
+}
+
+.rotateZ {
+  transform: rotateZ(-90deg);
+}
+
+.block {
+  display: block;
+}
+
+@media (max-width: 700px){
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+    margin-right: 30px;
+    align-self: flex-end;
+    order: -1;
+  }
+}
